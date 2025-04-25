@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main # Assicurati di indicare il branch giusto del tuo repository.
+
+media_folder: "images" # Dove caricare i file multimediali
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
